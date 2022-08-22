@@ -1,15 +1,11 @@
+1. To create environment and scrapy project type the following
+python -m venv scraping_env
 scraping_env\Scripts\activate.bat
-#scrapy startproject Scraping_Amazon
+scrapy startproject Scraping_Amazon
+
+2. To install required libraries
+pip install -r requirements.txt
+
+3. change your working directory and run the scraping process that will be saved in csv file
 cd Scraping_Amazon
-scrapy crawl amazon_scraping -o results.csv### its is name of spider in amazon-scraping.py
-
-
-1. fix category
-2. fix brackets in del span   *
-3. fix brackets in desc
-4. fix prod link and name	
-5.  fix brackets in rev sent	
-6. fix brackets in ships from and price sold by
-
-Amazon_Scraping_with_review_sentiment_analysis
-https://github.com/kamar-chehimy/Amazon_Scraping_with_review_sentiment_analysis.git
+scrapy crawl amazon_scraping -o results.csv
